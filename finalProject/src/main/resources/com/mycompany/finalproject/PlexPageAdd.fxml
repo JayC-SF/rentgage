@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="789.0" prefWidth="894.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.finalproject.plexList.PlexPageAddController">
+   <children>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Add New Plex" VBox.vgrow="NEVER">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </Label>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" VBox.vgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="59.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label minWidth="90.0" text="Address">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="address" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="-Infinity" promptText="e.g 123 Student Street" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="59.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label minWidth="90.0" text="Country">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="country" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="-Infinity" promptText="e.g Canada" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="59.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label minWidth="90.0" text="State">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="state" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="-Infinity" promptText="e.g Quebec" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="59.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label minWidth="90.0" text="City">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="city" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="-Infinity" promptText="e.g Montreal" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="59.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label minWidth="90.0" text="Postal Code">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="postalCode" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="-Infinity" promptText="e.g 1A1 A1A" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefWidth="200.0" spacing="59.0">
+               <children>
+                  <Label minWidth="90.0" text="Details">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="details" maxWidth="1.7976931348623157E308" minHeight="50.0" minWidth="-Infinity" prefHeight="50.0" prefWidth="356.0" promptText="e.g Comments on the new House" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextArea>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="message" alignment="CENTER" maxWidth="1.7976931348623157E308" textFill="RED" />
+      <HBox alignment="CENTER" maxHeight="70.0" minHeight="-Infinity" minWidth="-Infinity" spacing="30.0" VBox.vgrow="NEVER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="61.0" style="-fx-background-color: #ababab; -fx-background-radius: 3em;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#add" prefHeight="50.0" prefWidth="61.0" style="-fx-background-color: #ababab; -fx-background-radius: 3em;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</VBox>
